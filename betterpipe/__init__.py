@@ -5,11 +5,11 @@ from klotty import Klotty
 import boto3
 import os
 
-client = Klotty(api_key="re_X1PBTBvD_5mJfFM98AuF2278fNAGfXVNV")
+client = Klotty(api_key=secret_key)
 
-os.environ["AWS_ACCESS_KEY_ID"] = "AKIA45ZGR4NCIW2SEZV5"
+os.environ["AWS_ACCESS_KEY_ID"] = "aws_access_id"
 os.environ[
-  "AWS_SECRET_ACCESS_KEY"] = "0Qx/5MuYq3oYO79pfEpnBYAt15rcFOWke6i2JnXw"
+  "AWS_SECRET_ACCESS_KEY"] = "aws_access_key"
 
 class DataPipe:
 
@@ -26,7 +26,7 @@ class DataPipe:
     # Create an S3 client
     self.s3 = boto3.client('s3')
     # get s3 bucket
-    self.bucket_name = "fc4f6594-e469-40a3-88a6-caa8cf5648c9"
+    self.bucket_name = "bucket_name"
     # create new file
     self.s3.upload_file(self.file_name, self.bucket_name, self.file_name)
     # Make the file public
