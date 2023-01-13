@@ -15,7 +15,7 @@ To use Betterpipe, you'll first need to import the package and instantiate a Dat
 import uuid
 import os
 import sys
-from datapipe import DataPipe
+from betterpipe import DataPipe
 
 datapipe = DataPipe(user_email="johnsmith@gmail.com") # instantiates betterpipe instance and determines who to send the log url to```
 
