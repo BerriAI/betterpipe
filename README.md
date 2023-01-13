@@ -35,7 +35,7 @@ Finally, you can call your functions as usual and end the session by calling the
 
 ```my_function()
 my_function_2()
-datapipe.end_session() # pushes console output to s3 bucket ```
+datapipe.end_session() # pushes console output to s3 bucket```
 
 And that's it! With Betterpipe, you can easily monitor your functions' performance and troubleshoot any issues that may arise.
 
