@@ -22,7 +22,8 @@ datapipe = DataPipe(user_email="johnsmith@gmail.com") # instantiates betterpipe 
 
 Then, you can use the @datapipe() decorator to log any console outputs from the functions you want to monitor, like this:
 
-```@datapipe() # logs any console outputs
+```
+@datapipe() # logs any console outputs
 def my_function():
     print("This is a test.")
     print("This will be saved to a file.")
