@@ -29,7 +29,8 @@ def my_function():
 @datapipe() # logs any console outputs
 def my_function_2():
     print("This is a test.")
-    print("This will be saved to a file.")```
+    print("This will be saved to a file.")
+```
 
 Finally, you can call your functions as usual and end the session by calling the end_session() method on the DataPipe object, like so:
 
